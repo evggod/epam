@@ -1,0 +1,10 @@
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/bin/Debug/netcoreapp2.1/TriangleProj.deps.json
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/bin/Debug/netcoreapp2.1/TriangleProj.runtimeconfig.json
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/bin/Debug/netcoreapp2.1/TriangleProj.runtimeconfig.dev.json
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/bin/Debug/netcoreapp2.1/TriangleProj.dll
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/bin/Debug/netcoreapp2.1/TriangleProj.pdb
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/obj/Debug/netcoreapp2.1/TriangleProj.csprojAssemblyReference.cache
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/obj/Debug/netcoreapp2.1/TriangleProj.AssemblyInfoInputs.cache
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/obj/Debug/netcoreapp2.1/TriangleProj.AssemblyInfo.cs
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/obj/Debug/netcoreapp2.1/TriangleProj.dll
+/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/obj/Debug/netcoreapp2.1/TriangleProj.pdb
