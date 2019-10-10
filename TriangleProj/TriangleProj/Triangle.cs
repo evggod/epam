@@ -16,12 +16,5 @@ namespace TriangleProj
         {
             return (a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && a + c > b);
         }
-
-        public Triangle GetInstance(double a, double b, double c)
-        {
-            if (CheckIsPossibleToCreate(a, b, c))
-                return new Triangle() { A = a, B = b, C = c };
-            return null;
-        }
     }
 }

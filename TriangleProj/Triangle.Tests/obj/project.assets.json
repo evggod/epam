@@ -5088,11 +5088,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/Triangle.Tests/Triangle.Tests.csproj",
+      "projectUniqueName": "/Users/appl/Desktop/epam/TriangleProj/Triangle.Tests/Triangle.Tests.csproj",
       "projectName": "Triangle.Tests",
-      "projectPath": "/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/Triangle.Tests/Triangle.Tests.csproj",
+      "projectPath": "/Users/appl/Desktop/epam/TriangleProj/Triangle.Tests/Triangle.Tests.csproj",
       "packagesPath": "/Users/appl/.nuget/packages/",
-      "outputPath": "/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/Triangle.Tests/obj/",
+      "outputPath": "/Users/appl/Desktop/epam/TriangleProj/Triangle.Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -5109,8 +5109,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/TriangleProj.csproj": {
-              "projectPath": "/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/TriangleProj.csproj"
+            "/Users/appl/Desktop/epam/TriangleProj/TriangleProj/TriangleProj.csproj": {
+              "projectPath": "/Users/appl/Desktop/epam/TriangleProj/TriangleProj/TriangleProj.csproj"
             }
           }
         }

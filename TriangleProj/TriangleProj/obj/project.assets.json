@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/TriangleProj.csproj",
+      "projectUniqueName": "/Users/appl/Desktop/epam/TriangleProj/TriangleProj/TriangleProj.csproj",
       "projectName": "TriangleProj",
-      "projectPath": "/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/TriangleProj.csproj",
+      "projectPath": "/Users/appl/Desktop/epam/TriangleProj/TriangleProj/TriangleProj.csproj",
       "packagesPath": "/Users/appl/.nuget/packages/",
-      "outputPath": "/Users/appl/Downloads/BSTU-EPAM-Labs-master/TriangleProj/TriangleProj/obj/",
+      "outputPath": "/Users/appl/Desktop/epam/TriangleProj/TriangleProj/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
