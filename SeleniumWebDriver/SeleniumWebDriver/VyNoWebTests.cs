@@ -1,74 +1,55 @@
+using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Safari;
 
 namespace Tests
 {
-    public class VyNoWebTests
+    public class Tests
     {
-        private IWebDriver webDriver;
+        private SafariDriver safari;
 
         [SetUp]
         public void SetupChromeDriver()
         {
-            webDriver = new EdgeDriver() { Url = "https://www.vy.no/en" };
+			safari = new SafariDriver();
         }
 
         [Test]
-        public void CheckFindingRoutesWithEmptyFields()
-        {
-            var whereFrom_inputField = GetWebElement(".//*[@id='TP-departureStation']");
-            whereFrom_inputField.SendKeys("some text");
-            whereFrom_inputField.Clear();
-            var errorMessage = GetWebElement(".//*[@id='submitTravelPlanner']/h2");
-            var submit_button = GetWebElement(".//*[@class='_99266285 _d49aa3d6']");
-            var isErrorTextCorrect = errorMessage.Text.Equals("Please complete your selection above.");
-            Assert.IsTrue(IsElementDisable(submit_button) && errorMessage.Displayed && isErrorTextCorrect);
-        }
+		public void SearchRouteTest()
+		{
+			safari.Navigate().GoToUrl("https://www.bahn.com/en");
+			safari.FindElement(By.Id("js-auskunft-autocomplete-from")).SendKeys("Berlin");
+			safari.FindElement(By.Id("js-auskunft-autocomplete-to")).SendKeys("Aalen");
+			safari.FindElement(By.ClassName("js-submit-btn")).SendKeys(Keys.Enter);
+			var ResultContent = safari.FindElementByClassName("resultContentHolder").Enabled;
+			Assert.IsTrue(ResultContent);
+		}
 
-        [Test]
-        public void CheckPassangerMaxNumber()
-        {
-            var whereFrom_inputField = GetWebElement(".//*[@id='TP-departureStation']");
-            var whereTo_inputField = GetWebElement(".//*[@id='TP-arrivalStation']");
-            whereFrom_inputField.SendKeys("Oslo S");
-            whereTo_inputField.SendKeys("Stavanger");
-            var incrementAdult_button = GetWebElement(".//*[@id='center']/div[1]/div[2]/div[1]/form[1]/div[1]/div[3]/div[3]/ul[1]/li[1]/span[1]/button[2]");
-            var body = GetWebElement(".//body[1]");
-            WebElementClick(body, 2);
-            WebElementClick(incrementAdult_button, 9);
-            System.Threading.Thread.Sleep(500);
-            var errorMessage = GetWebElement(".//*[@id='TP-errorAdult']");
-            var incrementAdultDisable_button = GetWebElement(".//*[@id='center']/div[1]/div[2]/div[1]/form[1]/div[1]/div[3]/div[3]/ul[1]/li[1]/span[1]/button[2]");
-            var isErrorTextCorrect = errorMessage.Text.Contains("It is only possible to book for up to 9 passengers online. For group travel, please contact customer service at");
+		[Test]
+		public void LogInTest()
+		{
+			safari = new SafariDriver();
+			safari.Navigate().GoToUrl("https://www.bahn.de/p/view/meinebahn/login.shtml");
+			safari.FindElement(By.Id("Benutzername")).SendKeys("gaga231772");
+			safari.FindElement(By.Id("Passwort")).SendKeys("gaga2317");
+			safari.FindElement(By.ClassName("btn")).SendKeys(Keys.Enter);
+			var username = safari.FindElementByClassName("nobttommargin").FindElement(By.TagName("span")).GetProperty("title");
+			bool isUsername = false;
+			if (username == "Evgenij Bondarik")
+			{
+				isUsername = true;
+			}
+			else isUsername = false;
+			Assert.IsTrue(isUsername);
 
-            Assert.IsTrue(IsElementDisable(incrementAdultDisable_button) && errorMessage.Displayed && isErrorTextCorrect);
-        }
-
-        private IWebElement GetWebElement(string xPath)
-        {
-            return webDriver.FindElement(By.XPath(xPath));
-        }
-
-        private void WebElementClick(IWebElement element, int count)
-        {
-            for (int i = 0; i < count; i++)
-            {
-                element.Click();
-            }
-        }
-
-        private bool IsElementDisable(IWebElement element)
-        {
-            var backColor = element.GetCssValue("background-color");
-            return backColor.Contains("rgba(239, 239, 239, 1)") || backColor.Contains("#EFEFEF") || backColor.Contains("rgb(239, 239, 239)");
-        }
+		}
 
         [TearDown]
         public void QuitDriver()
         {
-            webDriver.Quit();
-            webDriver.Dispose();
+            safari.Quit();
+            safari.Dispose();
         }
     }
 }
