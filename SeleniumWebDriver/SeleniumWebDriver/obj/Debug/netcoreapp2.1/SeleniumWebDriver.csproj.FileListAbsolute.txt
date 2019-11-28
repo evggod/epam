@@ -1,0 +1,14 @@
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.dll
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/nunit.engine.netstandard.dll
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/Mono.Cecil.dll
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/SeleniumWebDriver.deps.json
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/SeleniumWebDriver.runtimeconfig.json
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/SeleniumWebDriver.runtimeconfig.dev.json
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/SeleniumWebDriver.dll
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/bin/Debug/netcoreapp2.1/SeleniumWebDriver.pdb
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/obj/Debug/netcoreapp2.1/SeleniumWebDriver.AssemblyInfoInputs.cache
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/obj/Debug/netcoreapp2.1/SeleniumWebDriver.AssemblyInfo.cs
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/obj/Debug/netcoreapp2.1/SeleniumWebDriver.dll
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/obj/Debug/netcoreapp2.1/SeleniumWebDriver.pdb
+/Users/appl/Desktop/epam/SeleniumWebDriver/SeleniumWebDriver/obj/Debug/netcoreapp2.1/SeleniumWebDriver.csprojAssemblyReference.cache
